@@ -10,7 +10,7 @@
     (function type(){
         letter = text.slice(0,++index);
         document.querySelector(".typing").textContent = letter;
-            setTimeout(type,150);
+            setTimeout(type,100);
             if(letter.length === 27){
                 (function type2(){
                     letter2 = text2.slice(0,++index2);
@@ -27,7 +27,7 @@
         slidesPerGroup: 1,
         loop: true,
         autoplay: {
-          delay: 2000,
+          delay: 800,
           disableOnInteraction: true,
         },
         loopFillGroupWithBlank: false,
@@ -39,7 +39,7 @@
 
 //animation on scroll
       AOS.init({
-        offset:500,
-        duration:1200,
+        offset:300,
+        duration:800,
         once: true,
       });
